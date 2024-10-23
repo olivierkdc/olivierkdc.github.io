@@ -1,0 +1,610 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>Prologue by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<!-- <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span> -->
+							<h1 id="title">Olivier Kuhn de Chizelle</h1>
+							<p>Data Scientist / ML Engineer</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+                                <li><a href="index.html" id="home-link" style="color:#ffff; font-weight:150">Return Home</a></li>
+                                <!-- <li><a href="#introduction" id="top-link">Back-to-Top</a></li> -->
+								<li><a href="#introduction" id="introduction-link">Introduction</a></li>
+								<li><a href="#preprocessing" id="preprocessing-link">Data Pre-Processing</a></li>
+								<li><a href="#eda" id="eda-link">Exploratory Data Analysis</a></li>
+								<li><a href="#nlp" id="nlp-link">NLP</a></li>
+								<li><a href="#ml" id="ml-link">Machine Learning</a></li>
+								<li><a href="#conclusion" id="conclusion-link">Conclusion</a></li>
+								<!-- <li><a href="#topnav" id="top-link"><span class="icon solid fa-home">Back-to-Top</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li> -->
+								<!-- <li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li> -->
+							</ul>
+						</nav>
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+					<ul class="icons">
+						<li><a href="https://github.com/olivierkdc" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/olivier-kdc/" class="icon brands fa-linkedin" target="_blank"><span class="label">Linkedin</span></a></li>
+						<li><a href="mailto:oyk3@georgetown.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+
+				</div>
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- <section id="topnav" class="topnav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="502.html">Big Data and Cloud Computing</a></li>
+					</ul>
+				</section> -->
+
+				<!-- Introduction -->
+					<section id="introduction" class="three text">
+						<div class="container">
+                            
+                            <header>
+								<h2>Project Introduction</h2>
+							</header>
+
+                            <h4 style="padding-bottom:0.5em;">History of Sports as Entertainment</h4>
+							<p style="margin-bottom:0.25em;">
+								&emsp; Sports have been an inescapable part of human history. They have provided a way for people 
+								to come together and compete in a friendly and controlled environment, and have often been 
+								used as a means of promoting physical fitness and health. In fact, the caves of Lascaux, France 
+								are decorated with depictions of wrestling dating back to 15,300 years ago. Throughout the ages, 
+								humans have recorded the influence and importance of sports in their culture, and consistently 
+								admired the great performers of each sport. In recent years, the impact of sports on society has 
+								only continued to grow. With the rise of professional sports leagues and the growth of television 
+								and other media, sports have become a major part of popular culture. As prominent gifted athletes 
+								emerge above the masses, a natural divide emerges between professional athletes and the fans of a 
+								sport who now turn to viewing sports. In the modern world, organized sports leagues are, before all, 
+								entertainment.
+							</p>
+                            <img src="images/502_Lascaux.png">
+                            <br>
+                            <i style="font-size:0.8em;">Depiction of Wrestling Dated over 15,300 Years in the Past</i>
+                            <br><br>
+
+                            <h4 style="padding-bottom:0.5em;">Rise of Esports</h4>
+                            <p style="margin-bottom:0.25em;">
+								&emsp; In the early 2000s, as video games became more popular and accessible, a new kind of sport emerged. 
+                                Esports, or electronic sports, is a form of competition in video games. Over the last two decades, 
+                                esports have exploded in popularity, viewership, and participation. The largest prize pool for any 
+                                given esports was just north of 40 million U.S. dollars. The Dota 2 tournament The International 2021 
+                                had a prize pool of $40,018,400.00. Even the NBA, a traditional sports league, has branched into esports 
+                                with its <a href="https://2kleague.nba.com/" target="_blank">NBA 2KLeague</a>. As traditional sports and 
+                                esports both increase in popularity, it is important to explore the differences or similarities present 
+                                between communities of traditional sports and communities following esports.
+							</p>
+                            <br>
+
+                            <h4 style="padding-bottom:0.5em;">Hate Speech in Esports</h4>
+                            <p style="margin-bottom:0.25em;">
+								&emsp; In particular, a concerning trend of esports is the 
+                                <a href="https://info.brandbastion.com/hate-speech-in-the-gaming-community-and-social-media" target="_blank">prevalence of hate speech and toxicity</a>. 
+                                More internet-aware readers might remember the furor when YouTuber PewDiePie 
+                                <a href="https://www.washingtonpost.com/news/the-intersect/wp/2017/09/12/there-are-no-excuses-for-it-pewdiepie-apologizes-for-saying-the-n-word-in-a-youtube-livestream/" target="_blank">used the N-word on stream in 2017</a>. 
+                                Similarly, general sports enthusiasts might remember Miami Heat player Meyers Leonard being removed from his team after using an anti-Semitic slur on his own stream in 2021. 
+                                These are just two examples of content creators taking part in this general environment of toxicity, and it is just the tip of the iceberg compared to player experiences in 
+                                public team games. 
+                                <a href="used the N-word on stream in 2017" target="_blank">Activision banned over 350,000 Call of Duty in the first half of 2021 alone for hate speech</a>.
+							</p>
+                            <br>
+
+                            <h4 style="padding-bottom:0.5em;">Hate Speech in Traditional Sports</h4>
+                            <p style="margin-bottom:0.25em;">
+								&emsp; This is not to say that traditional sports are free of hate speech/toxic behavior. In the 2019 NBA Finals, 
+                                <a href="https://www.washingtonpost.com/sports/2019/06/12/toronto-embarrassed-by-fans-who-cheered-kevin-durants-injury-seeks-make-amends/" target="_blank">Toronto Raptors fans celebrated seeing Kevin Durant's suffer from an Achilles tear</a>. 
+                                This incident is not isolated, with other athletes also receiving continued harassment over in-game mistakes or personal decisions fans disliked. Our society puts an immense pressure on athletes to perform their absolute best at all times, and then berate them when they fail to live up to those expectations. Not unlike how people treat their teammates in anonymous game lobbies.
+							</p>
+                            <br>
+
+                            <h4 style="padding-bottom:0.5em;">Sports Viewers as a Target Audience</h4>
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; The organization of sports and the rise of their prominence led to the development of more competitive scenes across all stages. 
+                                As a sport grows in influence, the communities surrounding them generate a tremendous amount of data from discussions, opinions, 
+                                or other insights of the given scene. It is crucial for marketers to better understand the target audience of a given sport, 
+                                if they wish to enact intelligent advertising, as well as guide the creation of future products.
+							</p>
+                            <br>
+
+                            <h4 style="padding-bottom:0.5em;">Project Goals</h4>
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; Given the inherent similarities between the two traditional sports and esports, the two cultures must share some traits in how they work. 
+                                Our goal here is to explicitly investigate these two communities to better understand how much Internet toxicity is an inherent product of 
+                                sport and how much comes from Internet-anonymity. Specifically, we expect that people involved in ‘esports’ conversations will be more likely 
+                                to engage in harmful language and use negative framing around their posts. Whether or not this is actually the case remains to be seen. A list 
+                                of preliminary business questions and their rationale are provided below. Although we did not tackle all of them, they were the foundation of 
+                                our whole investigation.
+							</p>
+                            <br>
+                            
+					</section>
+
+                <!-- Data Preprocessing -->
+					<section id="preprocessing" class="three text">
+						<div class="container">
+
+							<header>
+								<h2>Preliminary Data Pre-Processing</h2>
+							</header>
+
+							<h4 style="padding-bottom:0.5em;">Data Cleaning</h4>
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; Examining the missing values, the missing values for submissions are not that concerning. The majority of them fall within selftext, 
+                                which is the body of the post. Although this is concerning, something to note is that many Reddit posts are just a title. Since the 
+                                title contains all the information, the poster leaves the body empty. However, by keeping these rows we are changing our investigation 
+                                to consider one-off questions and thoughts. To get a deeper sense of Reddit communication, we will only consider ‘meatier’ posts 
+                                that have body. The other columns with missings: edited, author, and thumbnail have very few missings. Thus, for data health, we will just remove them.
+                                <br>
+                                &emsp; With respect to comments, however, we need to be more discerning. The body missings are especially concerning: why would a comment have no text? 
+                                Perhaps if it was deleted or moderated against? In this case, since we cannot be sure of the cause, and the amount of missings is small, we shall 
+                                just drop the missing values for comments.body. We will also want to remove NAs for submission_id. This is the column we will use to latch the 
+                                comments to their parent post. Without it, a major part of our analysis is impossible. Since there are few of these missings, we will just drop them 
+                                as well. Similarly, author will be dropped. After this cleaning, there are 98,325,988 comments remaining for further analysis.
+							</p>
+                            <br>
+
+                            <h4 style="padding-bottom:0.5em;">Initial Pre-processing</h4>
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; Another metric we will be looking into is the number of words in a given post/comment. This is to see if e-sport chat speech encourages 
+                                people to use shorter messages relative to traditional sports. This will also give us a metric to compare the Reddit post content against Twitter posts.
+                                <br>
+                                &emsp; One final metric we will create here is the days_after_post variable for comments. This measures how many days after the original post a 
+                                comment was posted. One of our hypotheses is that comments made very long after the original comment will be extreme in their sentiment. 
+                                After all, people are likely to be more engaged by a post if they are engaging with it long after it is most relevant.
+                                <br>
+                                &emsp; When evaluating the join process, we quickly checked for duplicate values. Fortunately, we were able to avoid having any duplicates in our 
+                                joined commetns and posts. The other element we reconsider is the amount of missing values generated by the join. Here, we will actually avoid 
+                                removing any missings! At this time, the missing values are not in columns we will be analyzing deeply. Thus, we can leave them in for now.
+                                <br>
+                                &emsp; Finally, now that the data is put together, is to quickly summarize it. Our initial summary shows that esports has fewer overall comments relative 
+                                to traditional sports. This makes sense because traditional sports are more entrenched with more fans. However, interestingly, esports comments have 
+                                more word and comments tend to be posted on posts later on in the post lifecycle.
+                                <br>
+                                &emsp; Finally, now that the data is put together, is to quickly summarize it. Our initial summary shows that esports has fewer overall comments relative 
+                                to traditional sports. This makes sense because traditional sports are more entrenched with more fans. However, interestingly, esports comments have 
+                                more word and comments tend to be posted on posts later on in the post lifecycle.
+							</p>
+                            <img src="images/502_eda_initialSummary.png">
+                            <br>
+                            <i style="font-size:0.8em;">Initial Summary of Reddit Data</i>
+                            
+                        </div>
+					</section>
+
+                <!-- Exploratory Data Analysis -->
+					<section id="eda" class="three text viz">
+						<div class="container">
+
+							<header>
+								<h2>Exploratory Data Analysis</h2>
+							</header>
+                            <h4 style="padding-bottom:0.5em;">EDA Visualizations</h4>
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; First, we plotted the top 10 subreddits by the total number of posts. The bars were colored based on which sports type they fell under. 
+                                Interestingly, we found a fairly even split in the top 10 between traditional sports and esports. League of Legends has the most posts by a significant 
+                                margin, with the NBA and Soccer subreddits coming after.
+							</p>
+                            <img src="images/502_eda_top_ten_subreddits.png">
+                            <br>
+                            <i style="font-size:0.8em;">Top 10 Subreddits with most posts</i>
+
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; After that, the length of comments was examined. Ultimately, we found an inverse relationship! The traditional sports subreddits have 
+                                longer bodies but shorter titles, while the reverse is true for esports.
+                            </p>
+                            <img src="images/502_eda_mean_length_submission.png">
+                            <img src="images/502_eda_mean_length_comment.png">
+                            <br>
+
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; Our team was also interested in examining the cyclicality of Reddit activity. One easy way was to see how activity changes by the day of the week. 
+                                This should be an easy way to point out short-term trends that jump out.
+                                <br>
+                                &emsp; Unsurprisingly, we continue to find that League of Legends is the most dominant esport on Reddit. It has by far the mosts posts for any given day. 
+                                The actual post activity for each of the esports doesn’t seem to rely on day much. This is not the case for traditional sports. The day definitely plays 
+                                a role in how many posts were made. For example, the most NFL posts were made on Monday, probably in the aftermath of NFL Sunday. Similarly, the UFC subreddit 
+                                seems the most posts on Sundays, probably in reaction to fights.
+                            </p>
+                            <img src="images/502_eda_esports_posts_by_day.png">
+                            <img src="images/502_eda_sports_posts_by_day.png">
+                            <br>
+
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; In terms of comments, League is the most popular, though it has a noticeable midweek dive. This is somewhat similar for the other esports that each have 
+                                days of high and low activity. For sports comments, NFL Sunday reigns supreme! After a long day of watching football, it does appear that many Redditors post 
+                                comments on the NFL subreddit, more than for any sport on any other day! Outside of the NFL though, day does not seem to change comment activity much for each sport.
+                            </p>
+                            <img src="images/502_eda_esports_comment_avg_day.png">
+                            <img src="images/502_eda_sports_comment_by_day.png">
+                            <br>
+
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; Next is to see how many comments are posted on each day out from the original post. Here, we actually have to take the logarithm of the total number of 
+                                comments for each day. This is because, the highest comment count frequencies come right as the post comes out. Within the first few days, the total comments 
+                                plummets by orders of magnitude. To reflect this while scaling the data, a log transformation was used.
+                                <br>
+                                &emsp; Using the below plot, you can see that the first 10 or so days of a post sees significantly more comment traffic than anything after. Most posts also start 
+                                seeing noticeably less comments after ~175 days. After that, there is some fluctuation, with the longest lived posts seeming to tail off at around 1.5 years.
+                            </p>
+                            <img src="images/502_eda_total_comments_n_days.png">
+                            <br>
+
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; Finally, to launch a small foray into sentiment analysis, we will plot the controversiality of posts. Reddit actually calculates this natively as a ratio 
+                                of Upvotes to Downvotes. The closer to 1, the more ‘controversial’ a post is. The further away from 1, the less controversial it is. We will collect the average 
+                                controversiality of various subreddits.
+                                <br>
+                                &emsp; Using the chart below, we can see taht soccer and Premier League subreddits are, on average, the most controversial. In fact, the 8 of the 9 most 
+                                controversial subreddits are all traditional sports, with only two esports subreddits cracking the top ten (r/leagueoflegends and r/DotA2). Another interesting 
+                                finding is that, while r/nba has the third-highest controversy rating, r/basketball has the lowest!
+                                <br>
+                                &emsp; In the future, we can use the controversy scores by comparing them to our own sentiment analysis and hate speech analysis during the NLP portion of this 
+                                project.
+                            </p>
+                            <img src="images/502_eda_mean_controversy_rating.png">
+                            <br>
+
+                            <!-- <a href="502_eda_code.html" class="button scrolly" target="_blank">Access EDA code</a> -->
+                            
+                            <p style="text-align:left; font-weight:500; color:black;">
+                                <a href="code/502_eda_code.html" target="_blank">Access EDA code</a><br>
+                            </p>
+
+						</div>
+					</section>
+
+				<!-- Natural Language Processing -->
+					<section id="nlp" class="three text viz">
+						<div class="container">
+
+							<header>
+								<h2>Natural Language Processing</h2>
+							</header>
+
+                            <h4 style="padding-bottom:0.5em;">Sentiment Analysis of Reddit Data</h4>
+							<p style="margin-bottom:0.25em;">
+                                &emsp; The natural first instinct when it comes to text data, especially in potentially headed topics like competitive sports and esports. 
+                                We’re interested in what this discourse looks like - is it overly positive, critical, or neutral. Positive and negative posts are obvious - 
+                                “Lebron James scores amazing game winner over the Pacers” is positive while “10 reasons why DotA sucks” is negative. Neutral posts, we discovered, 
+                                primarily consist of news, e.g. “FINAL SCORE: Mariners 3, Guardians 1.”
+                            </p>
+                            <img src="images/502_nlp_sentiment_sport_type.png">                            
+                            <br>
+                            <i style="font-size:0.8em;">Count of Reddit Submissions by Sentiment and Sports Type</i>
+
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; Far and away the biggest difference between the two communities comes from the negative post submissions. 
+                                While only 39.1% of post submissions in traditional sports are negative, 61.4% of posts are negative in the esports communities. 
+                                While not as clear from the above chart, there’s a similar difference when it comes to the percentage of positive posts. 
+                                While only 34.8% of posts are positive in the esport communities, 55.6% of posts in traditional sporting communities are positive.
+                            </p>
+
+                            <h4 style="padding-bottom:0.5em;">Submission Text Length</h4>
+							<p style="margin-bottom:0.25em;">
+                                &emsp; An additional factor to consider is how long a submission is within the context of sentiment analysis. Here, we may find that both 
+                                positive and negative posts provide either long, detailed compliments or critiques, or very short quips that may not have much evidential backing.
+                            </p>
+                            <img src="images/502_nlp_submission_length_sentiment.png">                            
+                            <br>
+                            <i style="font-size:0.8em;">Count of Reddit Submissions by Sentiment and Sports Type</i>
+
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; There doesn’t appear to be that much new information from this perspective that we couldn’t already glean from the prior analysis on submission 
+                                text length. It is mildly interesting to see that there is a higher average text length for positive posts than negative and neutral posts in the esports 
+                                communities. We also can see that, for traditional sports, a post with either a positive or negative sentiment is typically longer than a neutral post. 
+                                This is understandable, given that neutral posts tend to be headline/news information, while positive/negative posts require a bit more explanation.
+                            </p>
+
+                            <h4 style="padding-bottom:0.5em;">Wordclouds</h4>
+							<p style="margin-bottom:0.25em;">
+                                &emsp; Of course, sentiment analysis and word count can only get us so far – we also need to take a look at the posts themselves! 
+                                The clearest way to identify the most common words and topics is to do a simple wordcloud and compare the two. 
+                                But first, it is important to establish a baseline - what do all of these conversations have in common? 
+                                To do this, let’s look at the wordcloud that combines all communities:
+                            </p>
+                            <img src="images/502_nlp_total_wordcloud.png">       
+                            
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; A lot of these make intrinsic sense - in both sports and esports there are games that people, called players, play on teams. 
+                                A lot of the larger words apply to both communities, so it will be important to our analysis to look at where the words differ.
+                                <br>
+                                Let’s take a look at the separated wordclouds:
+                            </p>
+                            <img src="images/502_nlp_trad_wordcloud.png">    
+                            <br>
+                            <i style="font-size:0.8em;">Traditional Sports Wordcloud</i>
+                            <br>
+                            <img src="images/502_nlp_esports_wordcloud.png">
+                            <br>  
+                            <i style="font-size:0.8em;">Esports WordCloud</i>
+
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; A notable difference is found in the lack of importance assigned to the word <i>Team</i> in the esports wordcloud. Additionally,
+                                traditional sports enthusiasts seem to discuss longer trends, utilizing the the word <i>season</i> while esports fans put a stronger emphasis
+                                on individual impressive <i>plays</i>.
+                            </p>
+
+                            <h4 style="padding-bottom:0.5em;">TF-IDF</h4>
+							<p style="margin-bottom:0.25em;">
+                                &emsp; Term Frequency - Inverse Document Frequency is a measure of word importance in a corpus. Through this metric, we can determine that the words 
+                                above are crucial words in the vocabulary utilized in regards to various traditional sports and esports. These words are crucial when it comes to feature building.
+                            </p>
+                            <img src="images/502_nlp_traditional_tfidf.png" style="margin-right:5vh;">
+                            <img src="images/502_nlp_esports_tfidf.png" style="margin-left:5vh;">
+                            <br>
+                            <i style="font-size:0.8em;">Traditional Sports TF-IDF (left) & Esports TF-IDF (right)</i>
+
+                            <h4 style="padding-bottom:0.5em;">Sentiment Analysis of Twitter Data</h4>
+							<p style="margin-bottom:0.25em;">
+                                &emsp; With Reddit as a base, we wanted to take a look at how it compares to another social media’s conversations, Twitter. 
+                                We pulled 500 tweets on each topic, ranging from League of Legends to Basketball, and ran a similar sentiment analysis examination as the above. 
+                                While we weren’t as interested in word counts of posts (due to the inherent limit on Twitter), we were looking at how the two compared in a 
+                                broader sense - are Twitter and Reddit share the same sentiments on these topics?
+                            </p>
+                            <img src="images/502_nlp_traditional_tweet_sentiment_waffle.png">
+                            <br>
+                            <i style="font-size:0.8em;">Sentiment Analysis Breakdown for Traditional Sports Tweets</i>
+                            <br>
+                            <img src="images/502_nlp_esport_tweet_sentiment_waffle.png">
+                            <br>
+                            <i style="font-size:0.8em;">Sentiment Analysis Breakdown for Esports Tweets</i>
+                            <br>
+
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; There are a few hypothesis as to why Twitter is so positive. Twitter is a positive place for sports and esports fans because it allows them to 
+                                connect with other fans and share their thoughts and opinions about the latest games and events. With Twitter, fans can follow their favorite teams 
+                                and players and get instant updates on game scores, highlights, and other important news. They can also join in on real-time conversations about the 
+                                games and events, sharing their own thoughts and reactions as they happen. Additionally, Twitter is a great place for fans to find and share interesting 
+                                articles, videos, and other content related to sports and esports. All of these factors make Twitter a positive and engaging platform for sports and esports fans.
+                                <br>
+                                &emsp; By far, the largest takeaway is that Twitter is, generally, much more positive than Reddit (potentially for the reasons above). While both 
+                                definitely have negative (and neutral) posts at times, Twitter is much, much more positive in both types of sports.
+                            </p>
+
+                            <p style="text-align:left; font-weight:500; color:black;">
+                                <a href="code/502_nlp_preprocessing_comments.html" target="_blank">Access Comments Preprocessing code</a><br>
+                                <a href="code/502_nlp_preprocessing_submissions.html" target="_blank">Access Submission Preprocessing code</a><br>
+                                <a href="code/502_nlp_twitter_ingestion.html" target="_blank">Access Twitter Ingestion code</a><br>
+                                <a href="code/502_nlp_twitter_sentiments.html" target="_blank">Access Twitter Sentiment Analysis code</a><br>
+                                <a href="code/502_nlp_analysis.html" target="_blank">Access NLP Analysis code</a><br>
+                            </p>
+						</div>
+					</section>
+
+                <!-- Machine Learning -->
+					<section id="ml" class="three text">
+						<div class="container">
+
+							<header>
+								<h2>Machine Learning</h2>
+							</header>
+
+							<p>
+                                &emsp; In addition to natural language processing analysis conducted on the previous page, it is clear that this data 
+                                lends itself well to machine learning analysis. Machine learning in this context would allow Reddit consumers and analysts 
+                                to automatically learn and improve from data, without the need for explicit programming (which only some people have, especially 
+                                at the C-Suite level). This can be particularly useful in situations where it is difficult or impossible to develop a traditional 
+                                algorithm that accurately models a complex system such as Reddit, where there are nearly one million posts a day across 2.8 million 
+                                subreddits. We asked ourselves what Reddit users and what executives at Reddit would want to know about their website.
+                            </p>
+
+                            <h4 style="padding-bottom:0.5em;">Classifying Sport Type of Reddit Submissions</h4>
+							<p style="margin-bottom:0.25em;">
+                                &emsp; There are a few reasons why it would be important for a Reddit executive or analyst to decipher what type of subreddit an individual post comes from. 
+                                For example, a person might want to build a recommendation system that suggests subreddits to users based on their interests or activity on the site. 
+                                In order to do this effectively, the model would need to be able to accurately differentiate between the various subreddits on Reddit in order to provide 
+                                relevant recommendations. Additionally, a person might build a model to differentiate between subreddits in order to study the characteristics and features 
+                                of each subreddit, or to identify trends or patterns within specific subreddits. After testing various models, 
+                                we created a <strong>Random Forest Classifier</strong> model that could 
+                                accurately predict which type of subreddit a post was in nearly 80% of the time.
+                            </p>
+                            <img src="images/502_ml_sport_type_classification_cm.png">
+                            <br>
+                            <i style="font-size:0.8em;">Resulting Confusion Matrix from Random Forest Classifier</i>
+
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; The initial results are quite promising! Our accuracy is 80%, and we are not seeing an undue bias in the classifier. To get a sense of what the model is 
+                                actually using, we plotted the feature importances. Interestingly, the lions share of the predictive power was coming from the number of comments and the 
+                                score for the posts! This indicates that overall post engagement differs between esport and traditional sport subreddits.
+                            </p>
+                            <img src="images/502_ml_sport_type_rfc_feature_importances.png">
+                            <br>
+
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; As a bit of an experiment, we retrained our model using only the number of comments on a post and the post’s scores as the sole inputs. 
+                                Theoretically, while these two are the most impactful predictors above, the model should suffer since there are significantly fewer predictors 
+                                to use in the model. Surely at least a few of those features must help a little bit!
+                                <br>
+                                &emsp; To our surprise, that’s not what happens. Although the change is minimal, the simpler, more parsimonious model actually has a better performance 
+                                by a few tenths of a percent. That confusion matrix is below:
+                            </p>
+                            <img src="images/502_ml_sport_type_classification_pars_cm.png">
+                            <br>
+
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; This indicates that these two features alone are enough to build a decent model for identifying the subreddit type. This is wonderful news, 
+                                as it is generally better to have fewer inputs into a classification model because it can help to reduce the complexity of the model and make it 
+                                more interpretable. A model with fewer inputs is also less likely to overfit the data, which can lead to better generalization performance on unseen data. 
+                                Additionally, having fewer inputs can also make the model more efficient and easier to train, which can save time and resources. Of course, there is a trade-off, 
+                                as having too few inputs can also limit the model’s ability to accurately capture the nuances of the data and make accurate predictions. 
+                            </p>
+
+                            <h4 style="padding-bottom:0.5em;">Regressing Score of Reddit Submissions</h4>
+							<p style="margin-bottom:0.25em;">
+                                &emsp; Naturally, score is one of the most important variables within our data – and one of the most interesting. If you are a Reddit user, 
+                                you might want to know how popular a post is likely to be before you submit it, so that you can decide whether it is worth the effort to write it. 
+                                Additionally, you might want to understand post scores as a way of understanding how Reddit’s voting system works, and as a result you would find out 
+                                what factors are most important in determining the popularity of a post. You could then inject those attributes into your own posts to become more 
+                                popular online. While individual users would definitely find this useful, one other actor might as well: marketing companies. If you are a business 
+                                that is using Reddit for marketing purposes, you might be interested in predicting post scores as a way of identifying which posts are likely to be 
+                                the most effective in reaching your target audience.
+                                <br>
+                                &emsp; With the importance of predicting score in mind, we decided to create both regression and classification models to learn as much as we could 
+                                about what makes a post do well on Reddit. Notably, we made the active decision to look at the attributes of the post (e.g. number of comments, text 
+                                length, sentiment) for the regression model, and looked solely at the text and its length for the classification model. This decision is explained more below.
+                                <br><br>
+                                &emsp; We created two models: one that used a basic random forest regression, the other that used a random forest algorithm that helped us optimal 
+                                hyperparameters for the model. Either can be used, but we found that the hyperparameter-turned model, even if a bit more computationally expensive, 
+                                increased our accuracy enough to warrant the extra cost. Through this model, we are able to ascertain what the most important factors for a high score 
+                                are, as shown below:
+                            </p>
+                            <br>
+							<p style="margin-bottom:0.25em;">
+
+                            </p>
+                            <img src="images/502_ml_rfr_total_feature_importance.png">
+                            <br> 
+                            <i style="font-size:0.8em;">Feature Importance from RandomForestRegression on whole dataset</i>
+                            <br>
+
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; Out of curiosity (and the want to use a pipeline), we also explored if the features would have different levels of 
+                                importance for each type of sport.
+                            </p>
+
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; We can see from above that, by far, the most important feature of a post when it comes to score is the number of comments below the post. 
+                                This makes sense, as we would expect a high number of comments for a high-scoring post. The same goes for the number of crossposts, the second 
+                                most important feature. It’s only at the third most important feature, text length, that we see something within the control of the poster. We also 
+                                see that there’s a little bit of influence that the sentiment of the post or its edited status, but they both pale in comparison to the number of comments 
+                                and the number of crossposts features.
+                            </p>
+                            <img src="images/502_ml_rfr_trad_feature_importance.png">
+                            <br>
+                            <i style="font-size:0.8em;">Feature Importance from RandomForestRegression on traditional submissions</i>
+                            <br>
+                            <img src="images/502_ml_rfr_esports_feature_importance.png">
+                            <br>
+                            <i style="font-size:0.8em;">Feature Importance from RandomForestRegression on esports submissions</i>
+
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; We can see that, while the features have the same rank of importance, the number of comments is far more indicative of a 
+                                high score in the traditional sports communities than in esports communities. This appears to come at the expense of the relative 
+                                importance of the number of crossposts and the text lengths of posts in the traditional sports communities.
+                            </p>
+
+                            <h4 style="padding-bottom:0.5em;">Predicting Score Class of Reddit Submissions</h4>
+							<p style="margin-bottom:0.25em;">
+                                &emsp; On a simpler level, people are unlikely to care how well a particular post does, and more that it does well generally. 
+                                That is, is it gaining a bit of traction or is it stalling out? With this in mind, we also build a classification model to 
+                                determine if a post would be successful or not. We defined successful as being better than the median post, meaning that a 
+                                score of four or higher would be defined as a success, while anything lower than four would be deemed a failure, noting that 
+                                scores can also be negative or zero.
+                                <br>
+                                &emsp; Our main model looked at the text of the post itself, as we determined that a combination of what is said and the length of 
+                                the post are the only factors that can reasonably be controlled by an individual user. An individual user cannot reasonably 
+                                add a significant number of comments or crossposts, making those factors irrelevant in this context. While it’s possible for 
+                                a single user to create a plethora of additional accounts for this purpose, we don’t expect that this happens often enough, 
+                                if at all, to impact the model.
+                                <br>
+                                &emsp; When we take a look at the text itself combined with the length of the text, we are able to build a model that can successfully 
+                                predict the success of a post with an accuracy of .75, as shown below:
+                            </p>
+
+                            <img src="images/502_ml_score_classification_cm.png">
+                            <br>
+                            <i style="font-size:0.8em;">Resulting Confusion Matrix from RFC</i>
+
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; This is fairly reliable and does show, ultimately, that what person says within the post does have a rather significant impact 
+                                on how popular it gets. This also tells us that simple links, which are common across the entirety of the platform, is not enough to 
+                                be successful. Instead, it is adding some sort of summary or even some additional analysis that helps. On a broader scale, this is 
+                                substantial evidence showing how what you say, and not just who says it, matters.
+                            </p>
+
+                            <p style="text-align:left; font-weight:500; color:black;">
+                                <a href="code/502_ml_sport_type_classifier.html" target="_blank">Access Sports Type Classifier code</a><br>
+                                <a href="code/502_ml_score_regressor.html" target="_blank">Access  Score Regression code</a><br>
+                                <a href="code/502_ml_score_classifier.html" target="_blank">Access Score Classification code</a><br>
+                            </p>
+						</div>
+					</section>
+
+				<!-- Conclusion -->
+					<section id="conclusion" class="three text">
+						<div class="container">
+
+							<header>
+								<h2>Conclusion</h2>
+							</header>
+
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; As we have seen in this analysis, Reddit is a valuable source of data for sports and esports fans. 
+                                By using natural language processing and machine learning to analyze the vast amount of information available on Reddit, 
+                                we can gain insight into communities such as traditional sports and esports.
+                                <br>
+                                &emsp; At the beginning of this project, we posed ten questions concerning what we wanted to discover in our 
+                                analysis of sports and esports communities. At the base level of these questions was determining if there was a 
+                                significant difference between the communities of traditional sports and esports. <i style="font-weight:600;">This could not have been more the case</i>. 
+                                While the mean length of post text was longer in the traditional sports communities, the comments in the esports communities 
+                                were longer! While people posted more posts in the esports communities no matter the day of the week (primarily due to the r/LeagueOfLegends subreddit), 
+                                the traditional sports subreddits engaged with each other far more in the comments section (especially in the r/nfl subreddit on Sundays). 
+                                We do see different levels of post comment activity as well throughout the week - which could reasonably be due to esports fans being more 
+                                into being online than those who prefer traditional sports.
+                                <br>
+                                &emsp; There are many potential avenues for future analysis. First, while we attempted to a utilize a hate speech classifier for this analysis, 
+                                it served too much of a challenge given our limited time frame. While we had a proxy for inappropriate content through the 18+ label, this is 
+                                typically reserved for adult entertainment as opposed to hate speech. Future analysis should include a more rigorous pipeline for hate speech, 
+                                which, we believe, would require a specific and personalized hate speech classifier to properly adapt to the intricacies of the ‘Reddit’ lexicon. 
+                                Second, we envision a future analysis that revolves around a thorough comparison on these topics across more than just Reddit and Twitter. 
+                                Additional social media websites could be Instagram, Facebook, TikTok, and Youtube. While we were only able to examine the sentiment analysis 
+                                of Twitter and Reddit, there are opportunities to look at the time when posts occur and the lengths of the posts themselves.
+                            </p>
+
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

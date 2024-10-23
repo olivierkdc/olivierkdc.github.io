@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>Prologue by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<!-- <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span> -->
+							<h1 id="title">Olivier Kuhn de Chizelle</h1>
+							<p>Data Scientist / ML Engineer</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+                                <li><a href="index.html" id="home-link" style="color:#ffff; font-weight:150">Return Home</a></li>
+								<li><a href="#introduction" id="introduction-link">Introduction</a></li>
+								<!-- <li><a href="#preprocessing" id="preprocessing-link">Data Pre-Processing</a></li> -->
+								<li><a href="#data" id="eda-link">Data Preprocessing</a></li>
+								<li><a href="#ml" id="ml-link">ML Modeling</a></li>
+								<li><a href="#conclusion" id="conclusion-link">Conclusion</a></li>
+							</ul>
+						</nav>
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+					<ul class="icons">
+						<li><a href="https://github.com/olivierkdc" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/olivier-kdc/" class="icon brands fa-linkedin" target="_blank"><span class="label">Linkedin</span></a></li>
+						<li><a href="mailto:oyk3@georgetown.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+
+				</div>
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- <section id="topnav" class="topnav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="502.html">Big Data and Cloud Computing</a></li>
+					</ul>
+				</section> -->
+
+				<!-- Introduction -->
+					<section id="introduction" class="three text">
+						<div class="container">
+                            
+                            <header>
+								<h2>Project Introduction</h2>
+							</header>
+
+							<p style="margin-bottom:0.25em;">
+								&emsp; Computer Vision is a currently one of the hottest fields in Machine Learning. In this personal project,
+                                I build a Convolutional Neural Network in order to classify whether an image depicts a vehicle. The resulting model
+                                built in this project attains an <strong>accuracy of 99%</strong>.
+							</p>
+                            <br>
+                            
+					</section>
+                    
+                <!-- Exploratory Data Analysis -->
+					<section id="data" class="three text viz">
+						<div class="container">
+
+							<header>
+								<h2>Data Exploration and Preprocessing</h2>
+							</header>
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; The Data was obtained from <a href="https://kaggle.com" target="_blank">Kaggle.com</a>. 
+                                We first performed some Preprocessing on the data to ensure proper image dimensions to be fed into
+                                our Machine Learning Model. As we are running a Convolutional Neural Network, it is crucial that 
+                                the images all have the same dimensions. We therefore reshape the images to be have shape
+                                <strong>(64,64,3)</strong> and normalie the values to be between 0 and 1.
+                                <br>
+                                Next, we explore our Dataset in order to make sure that there are no blatant class imbalances.
+							</p>
+                            <img src="images/vehicle_IR_piechart.PNG">
+                            <br>
+                            <i style="font-size:0.8em;">Class Balance</i>
+
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; After preprocessing and randomly shuffling our data, we perform a small sanity check to verify that our
+                                data seems to be correctly labeled. In this case, a 1 indicates that the image <strong>depicts a vehicle</strong>
+                                while a 0 indicates that the image <strong>does not contain a vehicle</strong>.
+                            </p>
+                            <img src="images/vehicle_IR_imageGrid.PNG">
+                            <br>
+                            <i style="font-size:0.8em;">Random Sample of Images in our Data</i>
+
+						</div>
+					</section>
+
+                <!-- Machine Learning -->
+					<section id="ml" class="three text">
+						<div class="container">
+
+							<header>
+								<h2>Machine Learning Modeling</h2>
+							</header>
+							<p>
+                                &emsp; Now that the data has been preprocessed and verified, we are ready to begin modeling.
+                                In this case, we are utilizing Tensorflow and Keras workflows to build our Convolutional Neural Network.
+                                After experimenting, I found that the model did not need to be particularly complicated in order to achieve
+                                a high accuracy as a result. Therefore, the model contains <strong>two convolutional layers, and 2 Dense Layers</strong>.
+                                <br>
+                                &emsp; In the hope to avoid overfitting, I have included Callbacks to end the training once the model accuracy stops
+                                increasing for multiple epochs in a row. The model ended training after 22 epochs and restored the weights of the optimal
+                                epoch: 19.
+                            </p>
+                            <img src="images/vehicle_IR_accuracy.png">
+                            <img src="images/vehicle_IR_loss.png">
+                            <br>
+                            <i style="font-size:0.8em;">Model Accuracy in Loss throughout Training Epochs</i>
+						</div>
+					</section>
+
+
+				<!-- Conclusion -->
+					<section id="conclusion" class="three text">
+						<div class="container">
+
+							<header>
+								<h2>Conclusion</h2>
+							</header>
+
+                            <p style="margin-bottom:0.25em;">
+                                &emsp; The CNN model performed incredibly well with the data. While this project was interesting,
+                                I believe it to be quite simple. In the future, I would like to tweak this model in order to classify
+                                different types of vehicles as opposed to a binary category classification.
+                                <br>
+                            </p>
+
+                            <p style="text-align:left; font-weight:500; color:black;">
+                                <a href="code/vehicle_IR_notebook.html" target="_blank">Access Projet Code</a><br>
+                            </p>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
